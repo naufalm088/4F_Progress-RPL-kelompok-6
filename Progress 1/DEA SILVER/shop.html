@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEA SILVER - Shop Our Collection</title>
+    <link rel="stylesheet" href="deass.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+                <div class="dropdown-menu">
+                    <a href="deas.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="#settings">Settings</a>
+                    <a href="#certificate">Certificate</a>
+                </div>
+            </div>
+            <div class="logo">
+                <h1>DEA SILVER</h1>
+            </div>
+            <div class="header-icons">
+                <a href="#account"><i class="far fa-user"></i></a>
+                <a href="#cart"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#wishlist"><i class="far fa-heart"></i></a>
+                <a href="#location"><i class="fas fa-map-marker-alt"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="shop.html#categories">Categories</a></li>
+            <li><a href="shop.html#collections">Collections</a></li>
+            <li><a href="deas.html#offers">Offers</a></li>
+            <li><a href="deas.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="shop-section">
+        <h2>Our Silver Collection</h2>
+        <div class="shop-filters">
+            <div class="filter-group">
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="all">All</option>
+                    <option value="rings">Rings</option>
+                    <option value="necklaces">Necklaces</option>
+                    <option value="earrings">Earrings</option>
+                    <option value="bracelets">Bracelets</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="featured">Featured</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="shop-grid">
+            <!-- Product 1 -->
+            <div class="product-card" data-category="rings" data-price="500000">
+                <div class="product-image">
+                    <img src="ring1.PNG" alt="Silver Ring">
+                    <div class="product-badge">New</div>
+                </div>
+                <div class="product-info">
+                    <h3>Crystal Clamshell Ring</h3>
+                    <p class="price">Rp. 500,000</p>
+                    <div class="product-actions">
+                        <a href="#" class="btn-small">Add to Cart</a>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card" data-category="necklaces" data-price="800000">
+                <div class="product-image">
+                    <img src="infinitynecklace.PNG" alt="Infinity Necklace">
+                </div>
+                <div class="product-info">
+                    <h3>Infinity Necklace</h3>
+                    <p class="price">Rp. 800,000</p>
+                    <div class="product-actions">
+                        <a href="#" class="btn-small">Add to Cart</a>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card" data-category="earrings" data-price="700000">
+                <div class="product-image">
+                    <img src="blueearring.PNG" alt="Blue Sapphire Earrings">
+                    <div class="product-badge">Popular</div>
+                </div>
+                <div class="product-info">
+                    <h3>Blue Sapphire Earrings</h3>
+                    <p class="price">Rp. 700,000</p>
+                    <div class="product-actions">
+                        <a href="#" class="btn-small">Add to Cart</a>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card" data-category="bracelets" data-price="600000">
+                <div class="product-image">
+                    <img src="crystalbracelet.PNG" alt="Crystal Bracelet">
+                </div>
+                <div class="product-info">
+                    <h3>Crystal Bracelet</h3>
+                    <p class="price">Rp. 600,000</p>
+                    <div class="product-actions">
+                        <a href="#" class="btn-small">Add to Cart</a>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card" data-category="rings" data-price="954500">
+                <div class="product-image">
+                    <img src="couplering.PNG" alt="Essential Couple Ring">
+                </div>
+                <div class="product-info">
+                    <h3>Essential Couple Ring</h3>
+                    <p class="price">Rp. 954,500</p>
+                    <div class="product-actions">
+                        <a href="#" class="btn-small">Add to Cart</a>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card" data-category="bracelets" data-price="896000">
+                <div class="product-image">
+                    <img src="crownbracelet.PNG" alt="Twilight Crown Bangle">
+                </div>
+                <div class="product-info">
+                    <h3>Twilight Crown Bracelet</h3>
+                    <p class="price">Rp. 896,000</p>
+                    <div class="product-actions">
+                        <a href="#" class="btn-small">Add to Cart</a>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Product 7 -->
+            <div class="product-card" data-category="bracelets" data-price="864000">
+                <div class="product-image">
+                    <img src="loopbracelet.PNG" alt="Diamond Loop Bracelet">
+                </div>
+                <div class="product-info">
+                    <h3>Diamond Loop Bracelet</h3>
+                    <p class="price">Rp. 864,000</p>
+                    <div class="product-actions">
+                        <a href="#" class="btn-small">Add to Cart</a>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="pagination">
+            <button class="btn-small">Previous</button>
+            <button class="btn-small active">1</button>
+            <button class="btn-small">2</button>
+            <button class="btn-small">3</button>
+            <button class="btn-small">Next</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>DEA SILVER</h3>
+                <p>Pasar Anyar Cikampek,<br>
+                Blok C10, Cikampek Kota,<br>
+                Kec. Cikampek, Karawang, Jawa Barat<br>
+                41373<br>
+                dearestu14@gmail.com</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-instagram"></i> @deasilver___</a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Help & Information</h3>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Join Our Newsletter</h3>
+                <p>Want exclusive offers and first access to products?</p>
+                <form>
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit" class="btn-small">></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 DEA SILVER | All Rights Reserved
+        </div>
+    </footer>
+
+    <script src="deas.js"></script>
+</body>
+</html>
