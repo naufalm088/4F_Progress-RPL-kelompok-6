@@ -1,0 +1,8 @@
+# Folder yang sering tidak penting
+node_modules/
+dist/
+.vscode/
+.env
+__pycache__/
+*.log
+*.pyc
