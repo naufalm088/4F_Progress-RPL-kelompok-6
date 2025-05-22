@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEA SILVER - Elegance in Every Detail</title>
+    <link rel="stylesheet" href="deass.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+                <div class="dropdown-menu">
+                    <a href="#home">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="#settings">Settings</a>
+                    <a href="#certificate">Certificate</a>
+                </div>
+            </div>
+            <div class="logo">
+                <h1>DEA SILVER</h1>
+            </div>
+            <div class="header-icons">
+                <a href="Login.html"><i class="far fa-user"></i></a>
+                <a href="#cart"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#wishlist"><i class="far fa-heart"></i></a>
+                <a href="https://www.google.com/maps/place/6%C2%B024'32.5%22S+107%C2%B027'45.9%22E/@-6.408886,107.461531,788m/data=!3m1!1e3!4m4!3m3!8m2!3d-6.4090278!4d107.46275?hl=id&entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+                <i class="fas fa-map-marker-alt"></i>
+              </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Elegance in Every Detail</h2>
+            <p>Explore our exclusive collections and embrace true elegance.</p>
+            <a href="#collections" class="btn">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="ring1.PNG">
+            <div class="image-placeholder">
+                <p>Ring on a beautiful, sophisticated, unpacked canvas</p>
+            </div>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+            <!-- Certificate Verification Modal -->
+        <div id="certificate-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Certificate Verification</h2>
+                <div class="certificate-container">
+                    <div class="certificate-form">
+                        <p>Please enter your certificate serial number to verify authenticity:</p>
+                        <input type="text" id="certificate-number" placeholder="Certificate Serial Number">
+                        <button id="lookup-btn" class="btn">Verify</button>
+                        <div class="login-required">
+                            <p>You need to <a href="#login">login</a> or <a href="#register">create an account</a> to verify certificates.</p>
+                        </div>
+                    </div>
+                    <div class="certificate-result" style="display: none;">
+                        <h3>Certificate Details</h3>
+                        <div class="certificate-info">
+                            <p><strong>Serial Number:</strong> <span id="cert-serial"></span></p>
+                            <p><strong>Product:</strong> <span id="cert-product"></span></p>
+                            <p><strong>Date Issued:</strong> <span id="cert-date"></span></p>
+                            <p><strong>Status:</strong> <span id="cert-status"></span></p>
+                        </div>
+                        <button id="close-cert" class="btn-small">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <section id="categories" class="section">
+        <h2>Categories</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <h3>Rings</h3>
+                <img src="ring2.PNG" alt="Silver Rings">
+                <a href="#" class="btn-small">View Collection</a>
+            </div>
+            <div class="category-card">
+                <h3>Necklaces</h3>
+                <img src="necklace.PNG" alt="Necklace Collection">
+                <a href="#" class="btn-small">View Collection</a>
+            </div>
+            <div class="category-card">
+                <h3>Earrings</h3>
+                <img src="earring.PNG" alt="Earrings Collection">
+                <a href="#" class="btn-small">View Collection</a>
+            </div>
+            <div class="category-card">
+                <h3>Bracelets</h3>
+                <img src="bracelet.PNG" alt="Bracelets Collection">
+                <a href="#" class="btn-small">View Collection</a>
+            </div>
+            <div class="category-card">
+                <h3>Pearl Jewelry</h3>
+                <img src="pearl.PNG" alt="Pearl Jewelry Collection">
+                <a href="#" class="btn-small">View Collection</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="collections" class="section dark-bg">
+        <h2>Trendy Collections</h2>
+        <div class="collection-grid">
+            <div class="collection-card">
+                <img src="crystalbracelet.PNG">
+                <div class="product-badge">HOT</div>
+                <h3>Crystal Clamshell Ring</h3>
+                <p class="price">Rp. 500,000</p>
+                <a href="#" class="btn-small">Add to Cart</a>
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="collection-card">
+                <img src="blueearring.PNG">
+                <div class="product-badge2">STAR+</div>
+                <h3>Blue Sapphire Earrings</h3>
+                <p class="price">Rp. 700,000</p>
+                <a href="#" class="btn-small">Add to Cart</a>
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="collection-card">
+                <img src="infinitynecklace.PNG">
+                <div class="product-badge2">STAR</div>
+                <h3>Infinity Necklace</h3>
+                <p class="price">Rp. 800,000</p>
+                <a href="#" class="btn-small">Add to Cart</a>
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <div class="collection-card">
+                <img src="couplering.PNG">
+                <div class="product-badge2">STAR+</div>
+                <h3>Essential Couple Ring</h3>
+                <p class="price">Rp. 954,500</p>
+                <a href="#" class="btn-small">Add to Cart</a>
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="offers" class="section">
+        <h2>Top Offers</h2>
+        <div class="offer-container">
+            <div class="offer-card trending">
+                <div class="offer-image" style="background-image: url('to1.PNG')"></div>
+                <div class="offer-content">
+                    <h3>Limited</h3>
+                    <p>Once-in-a-Lifetime Offer Don't Miss Out</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+            </div>
+            <div class="offer-card trending">
+                <div class="offer-image" style="background-image: url('to2.PNG')"></div>
+                <div class="offer-content">
+                    <h3>Trending</h3>
+                    <p>Best Seller! Get Yours Before It's Gone!</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="cta">
+        <h2>FIND YOUR PERFECT MATCH TODAY!</h2>
+        <a href="#collections" class="btn-large">Explore Collections</a>
+    </section>
+
+    <footer>
+        <section id="contact" class="section"></section>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>DEA SILVER</h3>
+                <p>Pasar Anyar Cikampek,<br>
+                Blok C10, Cikampek Kota,<br>
+                Kec. Cikampek, Karawang, Jawa Barat<br>
+                41373<br>
+                
+                <div class="socials">
+                    <a href="mailto:dearestu14@gmail.com">
+                    <i class="fas fa-envelope"></i> dearestu14@gmail.com</a>
+                    <a href="https://www.instagram.com/deasilver__/" target="_blank">
+                    <i class="fab fa-instagram"></i> @deasilver___</a>
+                    <a href="https://wa.me/6285883302249?text=Halo%20DEA%20SILVER,%20saya%20ingin%20bertanya%20tentang%20produk%20..." target="_blank">
+                        <i class="fab fa-whatsapp"></i> +62 858-8330-2249
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Help & Information</h3>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Join Our Newsletter</h3>
+                <p>Want exclusive offers and first access to products?</p>
+                <form>
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit" class="btn-small">></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 DEA SILVER | All Rights Reserved
+        </div>
+    </footer>
+
+    <script src="deas.js"></script>
+</body>
+</html>
