@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tambah Produk - DEA SILVER</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            background: #fff;
+            margin: 60px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #374151;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="file"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 14px;
+            background-color: #f9fafb;
+        }
+
+        input[type="submit"] {
+            background-color: #10b981;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #059669;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 13px;
+            color: #9ca3af;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Tambah Produk Baru</h2>
+    <form action="proses-tambah-produk.php" method="POST" enctype="multipart/form-data">
+        <label for="nama">Nama Produk</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="deskripsi">Deskripsi</label>
+        <textarea id="deskripsi" name="deskripsi" rows="4" required></textarea>
+
+        <label for="harga">Harga (Rp)</label>
+        <input type="number" id="harga" name="harga" required>
+
+        <label for="kategori">Kategori</label>
+        <select id="kategori" name="kategori" required>
+            <option value="">-- Pilih Kategori --</option>
+            <option value="Gelang">Gelang</option>
+            <option value="Kalung">Kalung</option>
+            <option value="Cincin">Cincin</option>
+            <option value="Anting">Anting</option>
+            <option value="Lainnya">Lainnya</option>
+        </select>
+
+        <label for="gambar">Foto Produk</label>
+        <input type="file" id="gambar" name="gambar" accept="image/*" required>
+
+        <label for="link_wa">Link WhatsApp</label>
+        <input type="text" id="link_wa" name="link_wa" placeholder="https://wa.me/62xxxx">
+
+        <input type="submit" value="Tambah Produk">
+    </form>
+
+    <div class="footer">
+        &copy; 2025 DEA SILVER. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>

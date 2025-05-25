@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sertifikat Pembelian - Toko Perhiasan</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat&display=swap');
+
+  body {
+    margin:0;
+    padding:2rem;
+    background: #f9f6f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    color: #42391f;
+  }
+
+  .certificate {
+    max-width: 850px;
+    width: 100%;
+    background: #fffdfa;
+    padding: 3rem 3.5rem;
+    border: 12px solid #bfa052c7;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.13);
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .certificate::before,
+  .certificate::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #bfa052c7;
+    top: 18px;
+    bottom: 18px;
+    left: 18px;
+    right: 18px;
+    border-radius: 10px;
+    pointer-events: none;
+  }
+  .certificate::after {
+    top: 34px;
+    bottom: 34px;
+    left: 34px;
+    right: 34px;
+    border-style: dotted;
+  }
+
+  .details {
+    flex: 1 1 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+
+  .title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #bfa052;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+  .field-label {
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin-bottom: 0.2rem;
+    color: #6a5d27;
+    letter-spacing: 0.05em;
+  }
+
+  .field-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3b2e0f;
+    margin-bottom: 0.8rem;
+  }
+
+  .image-section {
+    flex: 0 0 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-section img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(191, 160, 82, 0.4);
+    border: 3px solid #bfa052c7;
+  }
+
+  /* Responsive tweaks below */
+  @media (max-width: 600px) {
+    .certificate {
+      padding: 2rem 2rem;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .image-section {
+      flex: 1 1 100%;
+    }
+    .details {
+      flex: 1 1 100%;
+    }
+    .title {
+      font-size: 2rem;
+    }
+    .field-label {
+      font-size: 1rem;
+    }
+    .field-value {
+      font-size: 1.25rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <article class="certificate" role="document" aria-label="Sertifikat Pembelian Toko Perhiasan">
+    <h1 class="title">Sertifikat Pembelian</h1>
+    <section class="details">
+      <div class="field">
+        <div class="field-label">Nama Pemilik</div>
+        <div class="field-value" aria-label="Nama Pemilik">Ericka</div>
+      </div>
+      <div class="field">
+        <div class="field-label">Nomor Pembelian</div>
+        <div class="field-value" aria-label="Nomor Pembelian">00001</div>
+      </div>
+      <div class="field">
+        <div class="field-label">Tanggal Pembelian</div>
+        <div class="field-value" aria-label="Tanggal Pembelian">1, Januari 2025</div>
+      </div>
+      <div class="field">
+        <div class="field-label">Harga</div>
+        <div class="field-value" aria-label="Harga">Rp. 739.012</div>
+      </div>
+      <div class="field">
+        <div class="field-label">Nomor Seri</div>
+        <div class="field-value" aria-label="Nomor Seri">xxxx5xx7xx</div>
+      </div>
+    </section>
+    <section class="image-section" aria-label="Gambar Sertifikat Fisik">
+      <img src="sertif.PNG" alt="Sertifikat fisik dari toko perhiasan" />
+    </section>
+  </article>
+</body>
+</html>
+
